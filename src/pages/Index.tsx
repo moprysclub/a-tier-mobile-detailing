@@ -14,15 +14,6 @@ const Index = () => {
       }
     }, 100);
 
-    // Hide Elfsight floating badge if present
-    const badgeInterval = setInterval(() => {
-      const badge = document.querySelector('a[href*="elfsight.com/google-reviews-widget"]');
-      if (badge) {
-        badge.remove();
-        clearInterval(badgeInterval);
-      }
-    }, 500);
-
     return () => {
       clearInterval(checkCalendly);
       clearInterval(badgeInterval);
@@ -38,18 +29,28 @@ const Index = () => {
     return false;
   };
 
+  const galleryImages = [
+    "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrEDAlUdgkOizmiDF1mRa43R2qdQ3NUaV61tdZ5PjYCdlja0AsKArcckQJFZPehj_Zg6ZWYiBzaxI5ElOOViYtciM5kl90MhXmZVIe2M4vX6lw1WpeBjW_MmVbtINmToRPBisgqwuDwE1_a=s1360-w1360-h1020-rw",
+    "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noATEi8btY04jmkYgrmNndVS3LYaT1fbQN1dVz-gidIY0YiUhEJ5Bko26W5W__3KLIXtVK0_G24SMV6_9HlOL6F_I7oPTpaZVVM19QOLQ6cC__05Uky333N-WUR6ckOE_fhqnNXbbrQsHXv=s1360-w1360-h1020-rw",
+    "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr_fdpXm4gZECbHBuVOxm3Y8CG-o3fpLBLFRDe2SdEIxSb_ASnvtmC5unEw1rkJfKS5ScboZDFrc7anWRfqmxfWDX_2U0xVzrFAEqahzqBeqVj429AaRCqD2I9gKO2XNDPPAXp3sUvOe88Y=s1360-w1360-h1020-rw",
+    "https://lh3.googleusercontent.com/gps-cs-s/AC9h4np6MTNMyIa6Qtx3PiqU-xFOJNqsBikDSwgk8fYXnZ8j60LA3CB136b_pr2hkFtF_RDOiTEPl9VXoOt2cn7H5ru8r935NK7KwuS1Qatm28_OqInRaWfFufmjTm-Gg4rDZyKHfit_3hxIPAWI=s1360-w1360-h1020-rw",
+    "https://lh3.googleusercontent.com/p/AF1QipMzqLh4Ugh4h7shV2NNXGnl07gCs9lXHEI60jIT=w621-h1023-p-k-no",
+    "https://lh3.googleusercontent.com/p/AF1QipMxaIisklvyvTVzELGB55cldIVwQkIn6s0xue0w=w621-h332-p-k-no",
+    "https://lh3.googleusercontent.com/p/AF1QipPtcDJYT2Q3uYzegKWB8rfocwTrnxQ7UCuX41R1=w621-h884-p-k-no",
+    "https://lh3.googleusercontent.com/p/AF1QipNEF-ss1xHefrKYNnve-7KUokt8KDv9jupBWkqe=s1360-w1360-h1020-rw",
+    "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrCxiHbk3RZkGWCX_D7xDsOB-Vzlbl5UAHb0jqk4SvZe_KooUCWGVKoGVvoZLrDOg2z_3G2eAe5hPOTO4jogXzuSwXiev1YTXDcJ7JCZCE7WuVD6ohvtiUYCkiIEWM6tQOEcUqC1WKbJuxL=s1360-w1360-h1020-rw"
+  ];
+
   return (
     <>
       {/* Urgency Bar */}
-      <div className="urgency-bar">
-        🔒 This site preview is reserved for 72h.
-      </div>
+      <div className="urgency-bar">🔒 This site preview is reserved for 72h.</div>
 
       {/* Sticky Header */}
       <header className="sticky-header">
-        <div className="font-semibold text-foreground">A Tier Mobile Detailing</div>
+        <div className="font-semibold text-foreground">Sam's Bathroom Renovations</div>
         <a 
-          href="https://docs.google.com/document/d/1XlWNBgBoX8n0GihFJnE5tK3MH_9M58vPNmUtzT9ffUA/edit?usp=sharing"
+          href="#" 
           className="btn-activate"
           target="_blank"
           rel="noopener noreferrer"
@@ -62,149 +63,64 @@ const Index = () => {
       <section className="hero-section">
         <div className="centered">
           <div className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            A-Tier Detailing — Delivered right where you are
+            Transform Your Bathroom with Expert Renovation
           </div>
 
           <div className="text-lg md:text-xl text-muted-foreground mb-6">
-            Interior & Exterior • Ceramic Coating • Precision Buff & Polish
+            10+ Years Experience • Tiling, Fixtures, Full Remodels & More
           </div>
 
           {/* Proof Bar */}
           <div className="proof-bar">
-            <div className="proof-item">
-              <div className="text">
-                <div className="text-lg mb-1">⭐</div>
-                <strong>5.0 Star Google Reviews</strong>
-              </div>
-            </div>
-            <div className="proof-item">
-              <div className="text">
-                <div className="text-lg mb-1">✅</div>
-                <strong>Trusted by Sydney Locals</strong>
-              </div>
-            </div>
-            <div className="proof-item">
-              <div className="text">
-                <div className="text-lg mb-1">🏆</div>
-                <strong>+3 Years Experience</strong>
-              </div>
-            </div>
+            <div className="proof-item"><div className="text"><div className="text-lg mb-1">🏆</div><strong>10+ years in business</strong></div></div>
+            <div className="proof-item"><div className="text"><div className="text-lg mb-1">⭐</div><strong>4.9 Rating (68)</strong></div></div>
+            <div className="proof-item"><div className="text"><div className="text-lg mb-1">📍</div><strong>Vermont, Australia</strong></div></div>
           </div>
 
-          <img 
-            src="https://i.imgur.com/cSXhGny.png" 
-            alt="A Tier Mobile Detailing brand/owner photo"
-            className="brand-photo"
-          />
-
           <div className="text-sm text-muted-foreground mt-4">
-            🇦🇺 Sydney Wide • 0420 906 836
+            🇦🇺 Serving Vermont & Surrounds • +61 0425 253 682
           </div>
         </div>
       </section>
 
-  {/* { Elfsight Google Reviews Widget}
+      {/* <!-- Elfsight Google Reviews -->*/}
       <div className="centered" style={{ marginTop: '2rem' }}>
-        <script src="https://elfsightcdn.com/platform.js" async></script>
-        <div className="elfsight-app-1c2bf6cf-3571-4fb6-b953-2e4af70eb37" data-elfsight-app-lazy></div>
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-de8a2f21-a9a1-4395-aa48-ad11d5a1adcd" data-elfsight-app-lazy></div>
       </div>
-  */}
 
-      {/* Page Structure & Copy */}
-      <main className="centered" style={{ marginTop: '2rem', paddingBottom: '6rem' }}>
-        <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-          A Tier Mobile Detailing
-        </h1>
-
-        <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-4">
-          Premium Mobile Car Care • Sydney Wide
-        </h2>
-
-        <h3 className="text-lg md:text-xl font-medium text-foreground mb-6">
-          Professional Detailing at Your Convenience
-        </h3>
-
-        <div className="space-y-4 mb-8 text-base md:text-lg">
-          <p>Premium mobile detailing across Sydney.</p>
-          <p>Interior and exterior perfection with every visit.</p>
-          <p>Fast, reliable, and spotless — guaranteed.</p>
+      {/* 📸 Gallery Section */}
+      <section className="gallery-scroll-container">
+        <div className="gallery-scroll">
+          {galleryImages.map((src, idx) => (
+            <img key={idx} src={src} alt={`Bathroom remodel ${idx + 1}`} className="gallery-image" />
+          ))}
         </div>
+      </section>
 
-        {/* What We Do */}
-        <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-          What We Do
-        </h2>
-
-        <div className="services-grid">
-          <div>🚗<br />Exterior Hand Wash & Wax</div>
-          <div>🧼<br />Interior Shampoo & Detail</div>
-          <div>🌀<br />Buff & Polish</div>
-          <div>🛡️<br />Ceramic Coating</div>
-          <div>🧽<br />Seat & Carpet Extraction</div>
-          <div>💎<br />Paint Protection</div>
-        </div>
-
-        {/* How It Works */}
-        <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4 mt-8">
-          How It Works
-        </h2>
-
-        <h3 className="text-lg font-semibold text-foreground mb-4">
-          It’s easy to get a flawless finish
-        </h3>
-
-        <div className="space-y-2 mb-8 text-base md:text-lg">
-          <div>1️⃣ Book online or call us</div>
-          <div>2️⃣ We arrive fully equipped</div>
-          <div>3️⃣ Your vehicle looks brand new</div>
-        </div>
-
-        {/* Why Choose Us */}
-        <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-          Why Choose Us?
-        </h2>
-
-        <div className="space-y-2 mb-8 text-base md:text-lg">
-          <div>✅ 5.0 Star Rated</div>
-          <div>📍 Sydney-wide mobile service</div>
-          <div>🧰 Quality products & detailing systems</div>
-        </div>
-
-        {/* Final Callout */}
-        <section className="mt-12 mb-8">
-          <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-            Ready to raise your car to A Tier?
-          </h2>
-          <p className="text-base md:text-lg text-muted-foreground">
-            Call or book today — we’ll handle the rest.
-          </p>
-        </section>
-      </main>
-
-      {/* Main Footer */}
-      <footer className="centered" style={{ paddingBottom: '2rem' }}>
-        <div className="space-y-2 text-sm text-muted-foreground">
-          <div className="font-semibold">A Tier Mobile Detailing</div>
-          <div>0420 906 836</div>
-          <div>Sydney Wide</div>
-          <div className="mt-4">© 2025 A Tier Mobile Detailing. All rights reserved.</div>
-        </div>
-      </footer>
+      {/* Styles for scrollable gallery */}
+      <style>{`
+        .gallery-scroll-container {
+          overflow-x: auto;
+          padding: 1rem 0;
+        }
+        .gallery-scroll {
+          display: flex;
+          gap: 1rem;
+          padding: 0 1rem;
+        }
+        .gallery-image {
+          height: 200px;
+          border-radius: 0.5rem;
+          object-fit: cover;
+          flex-shrink: 0;
+        }
+      `}</style>
 
       {/* Sticky Footer */}
       <div className="sticky-footer">
-        <a 
-          href="tel:+61420906836" 
-          className="btn btn-call"
-        >
-          📞 Call Us
-        </a>
-        <button 
-          onClick={openCalendly}
-          className="btn btn-book"
-        >
-          📅 Book Now
-        </button>
+        <a href="tel:+61425253682" className="btn btn-call">📞 Call Us</a>
+        <button onClick={openCalendly} className="btn btn-book">📅 Book Now</button>
       </div>
     </>
   );
