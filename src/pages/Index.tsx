@@ -73,7 +73,7 @@ const Index = () => {
           {/* Proof Bar */}
           <div className="proof-bar">
             <div className="proof-item"><div className="text"><div className="text-lg mb-1">🏆</div><strong>10+ years in business</strong></div></div>
-            <div className="proof-item"><div className="text"><div className="text-lg mb-1">⭐</div><strong>4.9 Rating (68)</strong></div></div>
+            <div className="proof-item"><div className="text"><div className="text-lg mb-1">⭐</div><strong>4.9 Google Rating</strong></div></div>
             <div className="proof-item"><div className="text"><div className="text-lg mb-1">📍</div><strong>Vermont, Australia</strong></div></div>
           </div>
 
@@ -84,7 +84,7 @@ const Index = () => {
       </section>
 
       {/* <!-- Elfsight Google Reviews -->*/}
-      <div className="centered" style={{ marginTop: '2rem' }}>
+      <div className="centered" style={{ marginTop: '0.2rem' }}>
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <div class="elfsight-app-de8a2f21-a9a1-4395-aa48-ad11d5a1adcd" data-elfsight-app-lazy></div>
       </div>
