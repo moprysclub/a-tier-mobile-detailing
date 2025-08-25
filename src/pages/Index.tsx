@@ -78,7 +78,7 @@ const Index = () => {
           </div>
 
           <div className="text-sm text-muted-foreground mt-4">
-            🇦🇺 Serving Vermont & Surrounds • +61 0425 253 682
+            🇦🇺 Serving Vermont & Surrounds • 0425 253 682
           </div>
         </div>
       </section>
@@ -89,7 +89,7 @@ const Index = () => {
 <div class="elfsight-app-de8a2f21-a9a1-4395-aa48-ad11d5a1adcd" data-elfsight-app-lazy></div>
       </div>
 
-      {/* 📸 Gallery Section */}
+  {/* 📸 Gallery Section */}
       <section className="gallery-scroll-container">
         <div className="gallery-scroll">
           {galleryImages.map((src, idx) => (
@@ -98,7 +98,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Styles for scrollable gallery */}
+  {/* Styles for scrollable gallery */}
       <style>{`
         .gallery-scroll-container {
           overflow-x: auto;
@@ -116,6 +116,81 @@ const Index = () => {
           flex-shrink: 0;
         }
       `}</style>
+
+
+
+{/* Page Structure & Copy — Mobile-First */}
+<main className="centered" style={{ marginTop: '1.5rem', paddingBottom: '4rem' }}>
+  <h1 className="text-xl font-bold text-foreground mb-1.5">
+    Sam's Bathroom Renovations
+  </h1>
+
+  <h2 className="text-base font-semibold text-muted-foreground mb-3">
+   🇦🇺 Vermont & Surroundings, VIC
+  </h2>
+
+  <h3 className="text-base font-medium text-foreground mb-5">
+    10+ Years of Bathroom Remodeling — Start to Finish
+  </h3>
+
+  <div className="space-y-3 mb-6 text-sm">
+    <p>We turn dull bathrooms into standout spaces — modern, durable and beautiful.</p>
+    <p>Full-service from quote to clean-up: design, demo, plumbing, electrical, tiling & fixtures.</p>
+    <p>Sam’s team uses high-grade materials and industry-best techniques that last for years.</p>
+    <p>We work fast, stay clean, and keep your day-to-day disruption near zero.</p>
+  </div>
+
+  {/* What We Do */}
+  <h2 className="text-lg font-bold text-foreground mb-3">
+    What We Do
+  </h2>
+
+  <div className="services-grid-mobile space-y-3 text-sm">
+    <div>🛁 Luxury Bathroom Remodels</div>
+    <div>🚿 Custom Shower Builds</div>
+    <div>🧱 Wall & Floor Tiling</div>
+    <div>🚽 Toilet & Vanity Installs</div>
+    <div>💡 Lighting & Ventilation</div>
+    <div>🧼 Waterproofing Systems</div>
+  </div>
+
+  {/* How It Works */}
+  <h2 className="text-lg font-bold text-foreground mt-8 mb-3">
+    How It Works
+  </h2>
+
+  <h3 className="text-sm font-semibold text-foreground mb-3">
+    Simple steps, real results
+  </h3>
+
+  <div className="space-y-2 text-sm mb-6">
+    <div>1️⃣ Book a free on-site quote</div>
+    <div>2️⃣ We handle planning, design & execution</div>
+    <div>3️⃣ You get a bathroom you’ll love</div>
+  </div>
+
+  {/* Why Choose Us */}
+  <h2 className="text-lg font-bold text-foreground mb-3">
+    Why Sam's?
+  </h2>
+
+  <div className="space-y-2 text-sm mb-6">
+    <div>📍 Local & reliable in Vermont, VIC</div>
+    <div>🛠️ All-in-one team (no subs)</div>
+    <div>🔧 Long-lasting results, clean finishes</div>
+    <div>⭐ 4.9 Stars — 68 Reviews</div>
+  </div>
+
+  {/* Final Callout */}
+  <section className="mt-10 mb-6">
+    <h2 className="text-lg font-bold text-foreground mb-2">
+      Let's build your new bathroom
+    </h2>
+    <p className="text-sm text-muted-foreground">
+      Book your free consult — and let our team bring your dream space to life.
+    </p>
+  </section>
+</main>
 
       {/* Sticky Footer */}
       <div className="sticky-footer">
