@@ -89,7 +89,28 @@ const Index = () => {
 <div class="elfsight-app-de8a2f21-a9a1-4395-aa48-ad11d5a1adcd" data-elfsight-app-lazy></div>
       </div>
 
-  {/* 📸 Gallery Section */}
+{/* Page Structure & Copy — Mobile-First */}
+<main className="centered" style={{ marginTop: '1.5rem', paddingBottom: '4rem' }}>
+  <h1 className="text-xl font-bold text-foreground mb-1.5">
+    Sam's Bathroom Renovations
+  </h1>
+
+  <h2 className="text-base font-semibold text-muted-foreground mb-3">
+   🇦🇺 Vermont & Surroundings, VIC
+  </h2>
+
+  <h3 className="text-base font-medium text-foreground mb-5">
+    10+ Years of Bathroom Remodeling — Start to Finish
+  </h3>
+
+  <div className="space-y-3 mb-6 text-sm">
+    <p>We turn dull bathrooms into standout spaces — modern, durable and beautiful.</p>
+    <p>Full-service from quote to clean-up: design, demo, plumbing, electrical, tiling & fixtures.</p>
+    <p>Sam’s team uses high-grade materials and industry-best techniques that last for years.</p>
+    <p>We work fast, stay clean, and keep your day-to-day disruption near zero.</p>
+  </div>
+
+    {/* 📸 Gallery Section */}
       <section className="gallery-scroll-container">
         <div className="gallery-scroll">
           {galleryImages.map((src, idx) => (
@@ -116,31 +137,7 @@ const Index = () => {
           flex-shrink: 0;
         }
       `}</style>
-
-
-
-{/* Page Structure & Copy — Mobile-First */}
-<main className="centered" style={{ marginTop: '1.5rem', paddingBottom: '4rem' }}>
-  <h1 className="text-xl font-bold text-foreground mb-1.5">
-    Sam's Bathroom Renovations
-  </h1>
-
-  <h2 className="text-base font-semibold text-muted-foreground mb-3">
-   🇦🇺 Vermont & Surroundings, VIC
-  </h2>
-
-  <h3 className="text-base font-medium text-foreground mb-5">
-    10+ Years of Bathroom Remodeling — Start to Finish
-  </h3>
-
-  <div className="space-y-3 mb-6 text-sm">
-    <p>We turn dull bathrooms into standout spaces — modern, durable and beautiful.</p>
-    <p>Full-service from quote to clean-up: design, demo, plumbing, electrical, tiling & fixtures.</p>
-    <p>Sam’s team uses high-grade materials and industry-best techniques that last for years.</p>
-    <p>We work fast, stay clean, and keep your day-to-day disruption near zero.</p>
-  </div>
-
-
+  
         {/* What We Do */}
         <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
           What We Do
@@ -229,3 +226,4 @@ const Index = () => {
 
 
 export default Index;
+
