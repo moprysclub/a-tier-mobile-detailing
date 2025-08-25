@@ -138,12 +138,28 @@ const Index = () => {
     <p>Full-service from quote to clean-up: design, demo, plumbing, electrical, tiling & fixtures.</p>
     <p>Sam’s team uses high-grade materials and industry-best techniques that last for years.</p>
     <p>We work fast, stay clean, and keep your day-to-day disruption near zero.</p>
-  </div>
+  </div>}
 
-  {/* What We Do */}
+
+        {/* What We Do */}
+        <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+          What We Do
+        </h2>
+
+        <div className="services-grid">
+          <div>🛁<br />Luxury Bathroom Remodels</div>
+          <div>🚿<br />Custom Shower Builds</div>
+          <div>🧱<br />Wall & Floor Tiling</div>
+          <div>🧼<br />Waterproofing Systems</div>
+          <div>🚽<br />Toilet & Vanity Installs</div>
+          <div>💡<br />Lighting & Ventilation</div>
+        </div>
+
+  {/* What We Do
   <h2 className="text-lg font-bold text-foreground mb-3">
     What We Do
   </h2>
+  */}
 
   <div className="services-grid-mobile space-y-3 text-sm">
     <div>🛁 Luxury Bathroom Remodels</div>
