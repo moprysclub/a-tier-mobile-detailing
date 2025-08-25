@@ -138,7 +138,7 @@ const Index = () => {
     <p>Full-service from quote to clean-up: design, demo, plumbing, electrical, tiling & fixtures.</p>
     <p>Sam’s team uses high-grade materials and industry-best techniques that last for years.</p>
     <p>We work fast, stay clean, and keep your day-to-day disruption near zero.</p>
-  </div>}
+  </div>
 
 
         {/* What We Do */}
@@ -226,5 +226,6 @@ const Index = () => {
     </>
   );
 };
+
 
 export default Index;
