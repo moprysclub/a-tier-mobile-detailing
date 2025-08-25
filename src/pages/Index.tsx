@@ -192,9 +192,8 @@ const Index = () => {
 
   <div className="space-y-2 text-sm mb-6">
     <div>📍 Local & reliable in Vermont, VIC</div>
-    <div>🛠️ All-in-one team (no subs)</div>
-    <div>🔧 Long-lasting results, clean finishes</div>
-    <div>⭐ 4.9 Stars — 68 Reviews</div>
+    <div>✅ Long-lasting results, clean finishes</div>
+    <div>⭐ 10+ Years Experience</div>
   </div>
 
   {/* Final Callout */}
@@ -206,6 +205,17 @@ const Index = () => {
       Book your free consult — and let our team bring your dream space to life.
     </p>
   </section>
+
+      {/* Main Footer */}
+      <footer className="centered" style={{ paddingBottom: '2rem' }}>
+        <div className="space-y-2 text-sm text-muted-foreground">
+          <div className="font-semibold">Sam's Bathroom Renovations</div>
+          <div>0425 253 682</div>
+          <div>Vermont, Australia</div>
+          <div className="mt-4">© 2025 Sam's Bathroom Renovations. All rights reserved.</div>
+        </div>
+      </footer>
+
 </main>
 
       {/* Sticky Footer */}
