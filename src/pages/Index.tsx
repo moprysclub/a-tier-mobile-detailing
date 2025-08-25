@@ -159,8 +159,6 @@ const Index = () => {
   <h2 className="text-lg font-bold text-foreground mb-3">
     What We Do
   </h2>
-  */}
-
   <div className="services-grid-mobile space-y-3 text-sm">
     <div>🛁 Luxury Bathroom Remodels</div>
     <div>🚿 Custom Shower Builds</div>
@@ -169,6 +167,8 @@ const Index = () => {
     <div>💡 Lighting & Ventilation</div>
     <div>🧼 Waterproofing Systems</div>
   </div>
+
+    */}
 
   {/* How It Works */}
   <h2 className="text-lg font-bold text-foreground mt-8 mb-3">
