@@ -84,7 +84,7 @@ const Index = () => {
       </section>
 
       {/* <!-- Elfsight Google Reviews -->*/}
-      <div className="centered" style={{ marginTop: '0.2rem' }}>
+      <div className="centered" style={{ marginTop: '0px' }}>
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <div class="elfsight-app-de8a2f21-a9a1-4395-aa48-ad11d5a1adcd" data-elfsight-app-lazy></div>
       </div>
