@@ -50,7 +50,7 @@ const Index = () => {
       <header className="sticky-header">
         <div className="font-semibold text-foreground">Sam's Bathroom Renovations</div>
         <a 
-          href="https://docs.google.com/document/d/116O1Y4Wgpa2gWJfm1Mh2aYSOZ0ijgyeo5mmXdNVHyh8/edit?usp=sharing" 
+          href="https://docs.google.com/document/d/1qtTxpW0Q2M3PL38JFN4j5Gammin8u0YfRJUNC4ft2jk/edit?usp=sharing" 
           className="btn-activate"
           target="_blank"
           rel="noopener noreferrer"
@@ -226,5 +226,6 @@ const Index = () => {
 
 
 export default Index;
+
 
 
